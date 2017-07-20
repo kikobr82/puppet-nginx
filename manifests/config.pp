@@ -1,6 +1,6 @@
 class nginx::config(
   String $ensure                = $::nginx::config_ensure,
-  String $config_dir            = $::nginx::config_config_dir,
+  String $config_dir            = $::nginx::config_dir,
   String $mode                  = $::nginx::config_mode,
   String $owner                 = $::nginx::config_owner,
   String $group                 = $::nginx::config_group,
