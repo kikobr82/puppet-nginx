@@ -10,7 +10,7 @@ class nginx(
   String $config_log_dir               = $::nginx::params::config_log_dir,
   String $config_pid_file              = $::nginx::params::config_pid_file,
   Optional[String] $config_vdir_enable = $::nginx::params::config_vdir_enable,
-  String $config_process_user          = $::nginx::params::service_process_user,
+  String $config_process_user          = $::nginx::params::config_process_user,
   String $service_pattern              = $::nginx::params::service_pattern,
   String $service_ensure               = $::nginx::params::service_ensure,
   String $service_name                 = $::nginx::params::service_name,
