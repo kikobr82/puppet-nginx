@@ -21,7 +21,8 @@ define nginx::vhost(
     notify  => Service['nginx_service'],
   }
   file { $vhost_docroot:
-    ensure => directory,
+    ensure  => directory,
+    recurse => true,
     mode    => '0755',
     owner   => $owner,
     group   => $group,
